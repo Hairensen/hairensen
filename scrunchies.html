@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Hairensen – Scrunchies</title>
@@ -8,19 +8,36 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #f7f1eb; /* Lys beige baggrund */
-      color: #3d2c2c; /* Mørk brun tekst */
+      background-color: #f7f1eb; /* Light beige background */
+      color: #3d2c2c; /* Dark brown text */
     }
 
     header {
       background-color: #e6d3c5; /* Beige header */
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 1.5rem;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      margin: 0 10px; /* Space between logos and title */
+    }
+
+    .logo-container img {
+      height: 60px;
     }
 
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 1rem;
     }
 
     nav a {
@@ -49,7 +66,7 @@
     }
 
     .scrunchie-product:hover {
-      transform: scale(1.05); /* Når man holder musen over bliver produktet lidt større og det er meget godt hihihihihihi*/
+      transform: scale(1.05); /* When you hover the mouse, the product becomes a bit larger and it's very nice hihihihihihi */
     }
 
     .scrunchie-product img {
@@ -66,40 +83,55 @@
 </head>
 <body>
 
-<header>
-  <h1>Hairensen</h1>
+  <header>
+    <!-- Logos positioned beside the title -->
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="logo.png" alt="Hairensen logo">
+      </a>
+    </div>
+    <h1>Hairensen</h1>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="logo.png" alt="Hairensen logo">
+      </a>
+    </div>
+  </header>
+
+  <!-- Navigation links below the title -->
   <nav>
-    <a href="index.html">Forside</a>
-    <a href="produkter.html">Produkter</a>
-    <a href="omos.html">Om os</a>
-    <a href="kontakt.html">Kontakt</a>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
-</header>
 
-<div class="product-section">
-  <h2>Vores Scrunchies</h2>
+  <div class="product-section">
+    <h2>Our Scrunchies</h2>
 
-  <!-- Scrunchie 1: Emilie -->
-  <div class="scrunchie-product">
-    <img src="https://i.imgur.com/4XhZ7XZ.jpg" alt="Mærkelig scrunchie">
-    <h3>Emilie</h3>
-    <p>49 kr</p>
-    <a href="Emilie.html"><button>Se mere</button></a>
+    <!-- Scrunchie 1: Emilie -->
+    <div class="scrunchie-product">
+      <img src="https://i.imgur.com/4XhZ7XZ.jpg" alt="Weird scrunchie">
+      <h3>Emilie</h3>
+      <p>49 kr</p>
+      <a href="Emilie.html"><button>See more</button></a>
+    </div>
+
+    <!-- Scrunchie 2: Anna -->
+    <div class="scrunchie-product">
+      <img src="https://i.imgur.com/4XhZ7XZ.jpg" alt="Strange scrunchie">
+      <h3>Anna</h3>
+      <p>49 kr</p>
+      <a href="Anna.html"><button>See more</button></a>
+    </div>
+
   </div>
 
-  <!-- Scrunchie 2: Anna -->
-  <div class="scrunchie-product">
-    <img src="https://i.imgur.com/4XhZ7XZ.jpg" alt="Underlig scrunchie">
-    <h3>Anna</h3>
-    <p>49 kr</p>
-    <a href="Anna.html"><button>Se mere</button></a>
-  </div>
-
-</div>
-
-<footer>
-  &copy; 2025 Hairensen – Alle rettigheder forbeholdes
-</footer>
+  <footer>
+    &copy; 2025 Hairensen – All rights reserved
+  </footer>
 
 </body>
 </html>
+
+

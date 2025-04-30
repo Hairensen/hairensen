@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Hairensen – Beige Luxe Scrunchie</title>
@@ -8,19 +8,34 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #f7f1eb; /* Lys beige baggrund */
-      color: #3d2c2c; /* Mørk brun tekst */
+      background-color: #f7f1eb;
+      color: #3d2c2c;
       text-align: center;
     }
 
     header {
-      background-color: #e6d3c5; /* Beige header */
-      padding: 1.5rem;
+      background-color: #e6d3c5;
+      padding: 1.5rem 1rem;
     }
 
-    header h1 {
+    .logo-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-title img {
+      height: 60px;
+    }
+
+    .logo-title h1 {
       margin: 0;
       font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
     }
 
     nav a {
@@ -51,12 +66,16 @@
 <body>
 
 <header>
-  <h1>Hairensen</h1>
+  <div class="logo-title">
+    <a href="index.html"><img src="logo.png" alt="Hairensen logo"></a>
+    <h1>Hairensen</h1>
+    <a href="index.html"><img src="logo.png" alt="Hairensen logo"></a>
+  </div>
   <nav>
-    <a href="index.html">Forside</a>
-    <a href="produkter.html">Produkter</a>
-    <a href="omos.html">Om os</a>
-    <a href="kontakt.html">Kontakt</a>
+    <a href="index.html">Home</a>
+    <a href="Products.html">Products</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
   </nav>
 </header>
 
@@ -64,13 +83,15 @@
   <h2>Beige Luxe Scrunchie</h2>
   <img src="https://i.imgur.com/4XhZ7XZ.jpg" alt="Beige Luxe Scrunchie">
   <p>49 kr</p>
-  <p>En luksuriøs beige scrunchie, perfekt til både hverdag og fest. Blød og elastisk, ideel til at holde håret på plads uden at beskadige det.</p>
-  <a href="produkter.html"><button>Tilbage til Produkter</button></a>
+  <p>A luxurious beige scrunchie, perfect for both everyday wear and special occasions. Soft and elastic, ideal for holding your hair in place without damaging it.</p>
+  <a href="products.html"><button>Back to products</button></a>
 </div>
 
 <footer>
-  &copy; 2025 Hairensen – Alle rettigheder forbeholdes
+  &copy; 2025 Hairensen – All rights reserved
 </footer>
 
 </body>
 </html>
+
+
